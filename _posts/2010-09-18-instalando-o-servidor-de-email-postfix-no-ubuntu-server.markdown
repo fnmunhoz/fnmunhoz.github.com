@@ -56,9 +56,6 @@ Durante a instalaçao sera executado um wizard para uma configuraçao basica do 
 [![](/images/instalando-o-servidor-de-email-postfix-no-ubuntu-server/postfix-3.png.scaled1000-300x246.png)](/images/instalando-o-servidor-de-email-postfix-no-ubuntu-server/postfix-3.png.scaled1000.png)
 
 
-[See and download the full gallery on posterous](http://blog.felipemunhoz.com/instalando-o-servidor-de-email-postifix-no-ub)
-
-
 
 
 Neste wizard sao feitas duas perguntas:

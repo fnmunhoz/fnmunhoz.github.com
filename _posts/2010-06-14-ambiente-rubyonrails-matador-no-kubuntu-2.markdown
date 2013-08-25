@@ -15,9 +15,9 @@ tags:
 - rails
 ---
 
-No [post anterior](http://blog.felipemunhoz.com/2010/06/14/ambiente-rubyonrails-matador-no-kubuntu-1/) foi configurado o ambiente para o rails 3. Neste post vamos para a instalação da IDE.
+No [post anterior](http://blog.felipemunhoz.com/ambiente-rubyonrails-matador-no-kubuntu-1/) foi configurado o ambiente para o rails 3. Neste post vamos para a instalação da IDE.
 
-Seguindo os princípios definidos nos [requisitos do ambiente de desenvolvimento](http://blog.felipemunhoz.com/2010/06/13/requisitos-do-ambiente-de-programacao/) optei pela IDE desenvolvida pela [Aptana](http://aptana.org/).
+Seguindo os princípios definidos nos [requisitos do ambiente de desenvolvimento](http://blog.felipemunhoz.com/requisitos-do-ambiente-de-programacao/) optei pela IDE desenvolvida pela [Aptana](http://aptana.org/).
 
 A versão estável é a radrails 2, entretanto optei pela versão beta Aptana Studio 3 que será a versão da IDE com suporte para o Rails 3  (que no momento que escrevo este post também encontra-se em estágio beta).
 
@@ -25,7 +25,7 @@ Para realizar o download vá [nesta página](http://aptana.org/products/studio3/
 
 Vá até a pasta de download e descompacte os arquivos no diretório criado abaixo.
 
-    
+
     cd ~
     mkdir -p dev/ides/studio3
     mkdir -p dev/workspaces/studio3

@@ -94,9 +94,6 @@ Durante a instalaçao sera apresentado um wizard para facilitar o processo de co
 [![](/images/integrando-o-pam-ao-ldap/pam_ldap-11.png.scaled1000-300x190.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-11.png.scaled1000.png)
 
 
-[See and download the full gallery on posterous](http://blog.felipemunhoz.com/integrando-o-pam-ao-ldap)
-
-
 
 
 

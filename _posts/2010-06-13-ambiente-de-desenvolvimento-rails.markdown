@@ -10,29 +10,29 @@ wordpress_id: 69
 
 O mundo das aplicações caminha cada vez mais para a WEB, aplicações Desktop ainda são amplamente utilizadas, mas a tendência é que sejam migradas para a WEB em sua maioria. Neste sentido a minha escolha do ambiente de desenvolvimento tem foco na WEB, indepentende do tipo de dispositivo que irá acessar a aplicação ( PCs, notebooks, netbooks, smartphones, geladeiras?) ela deve estar preparada e atender de forma satisfatória.
 
-De acordo com os [requisitos](http://blog.felipemunhoz.com/2010/06/13/requisitos-do-ambiente-de-programacao/) que defini como básicos nos meus estudos para um ambiente de desenvolvimento, o rails cumpre até agora todos eles de forma bastante interessante. Vamos a eles:
+De acordo com os [requisitos](http://blog.felipemunhoz.com/requisitos-do-ambiente-de-programacao/) que defini como básicos nos meus estudos para um ambiente de desenvolvimento, o rails cumpre até agora todos eles de forma bastante interessante. Vamos a eles:
 
 
 
-	
+
   * Open Source
 
-	
+
   * Multiplaforma (Linux, Windows, MacOS, Android)
 
-	
+
   * Bem documentado
 
-	
+
   * Comunidade ativa
 
-	
+
   * Ferramentas que agilizem o desenvolvimento de aplicações
 
-	
+
   * Possua diversas opções de IDEs
 
-	
+
   * Utilizar controle de versão
 
 

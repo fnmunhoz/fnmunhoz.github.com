@@ -75,9 +75,6 @@ Com a imagem ISO do Ubuntu Server baixada va ate o VirtualBox e configure a maqu
 [![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-12.png.scaled1000-300x214.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-12.png.scaled1000.png)
 
 
-[See and download the full gallery on posterous](http://blog.felipemunhoz.com/instalando-o-ubuntu-server-no-virtualbox)
-
-
 
 
 Neste momento o VirtualBox esta configurado e pronto para dar boot no Ubuntu Server e iniciar a instalaçao.
@@ -141,7 +138,7 @@ O wizard a seguir apresenta todos os passos da instalaçao do Ubuntu Server:
 
 
 
-[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-12.png.scaled500-300x214.png)](http://posterous.com/getfile/files.posterous.com/temp-2010-09-12/kyDhazlJjBHpjrvzlFkmmvbFovxrplfhbpgxaFuolzqwDHothcrsJDdJjHIv/ubuntu-server-12.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-12.png.scaled500-300x214.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-12.png.scaled1000.png)
 [![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-14.png.scaled1000-300x191.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-14.png.scaled1000.png)
 [![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-15.png.scaled1000-300x191.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-15.png.scaled1000.png)
 [![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-16.png.scaled1000-300x222.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-16.png.scaled1000.png)
@@ -172,9 +169,6 @@ O wizard a seguir apresenta todos os passos da instalaçao do Ubuntu Server:
 [![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-42.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-42.png.scaled1000.png)
 [![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-39.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-39.png.scaled1000.png)
 [![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-43.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-43.png.scaled1000.png)
-
-
-[See and download the full gallery on posterous](http://blog.felipemunhoz.com/instalando-o-ubuntu-server-no-virtualbox)
 
 
 
