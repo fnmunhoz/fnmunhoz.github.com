@@ -1,3 +1,4 @@
-name: Your New Jekyll Site
+name: Felipe Munhoz
 markdown: redcarpet
 pygments: true
+permalink: /:title

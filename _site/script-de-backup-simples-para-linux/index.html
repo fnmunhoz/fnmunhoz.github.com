@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Script de backup simples para linux</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Felipe Munhoz</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Script de backup simples para linux</h2>
+<p class="meta">21 Nov 2010</p>
+
+<div class="post">
+<p>O script de backup abaixo, utiliza o aplicativo tar para criar uma copia compactada do diretorio /var/www dentro do diretorio /mnt/backup. Para diferenciar o arquivo de backup de outros backups desse mesmo diretorio e adicionada a data atual no nome do arquivo de backup.</p>
+
+<h1>!/bin/bash</h1>
+
+<p>DATA=<code>date +%Y-%m-%d-%H-%M</code><br>
+cd /mnt/backup<br>
+tar -zcvf sites-&quot;$DATA&quot;.tar.gz /var/www/</p>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

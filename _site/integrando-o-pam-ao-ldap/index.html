@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Integrando o PAM ao LDAP</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Felipe Munhoz</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Integrando o PAM ao LDAP</h2>
+<p class="meta">16 Oct 2010</p>
+
+<div class="post">
+<p>Nos proximos passos estaremos configurando o PAM para autenticar usuarios que estao na base LDAP.</p>
+
+<p>Entendendo o PAM</p>
+
+<p>Plugglable Autentication Modules (Modulos de autenticaçao plugaveis) sao um conjunto de bibliotecas usadas para fazer autenticaçao, gerenciamento de contas, controle de recursos dos usuarios no sistema, em adiçao ao tradicional sistema de acesso baseado em usuarios/grupos.</p>
+
+<p>Este recurso permite modificar a forma que um aplicativo autentica e define recursos para o usuario sem necessidade de recompilar o aplicativo principal.</p>
+
+<p>Os recursos que desejamos controlar restriçoes via PAM sao especificados individualmente por serviços nos arquivos correspondentes em <code>/etc/pam.d</code> e entao os arquivos correspondentes em <code>/etc/security</code> sao usados para controlar tais restriçoes.</p>
+
+<p>Para mais informaçoes sobre o PAM acesse o <a href="http://focalinux.cipsga.org.br/guia/avancado/ch-d-restr.htm">Guia Foca GNU/Linux Capitulo 19 - Restriçoes de acesso, recursos e serviços</a></p>
+
+<p>Instalando o Suporte do PAM ao LDAP</p>
+
+<h1>apt-get install libnss-ldap libpam-ldap nscd libpam-foreground</h1>
+
+<p>Durante a instalaçao sera apresentado um wizard para facilitar o processo de configuraçao. As informaçoes que serao necessarias serao:</p>
+
+<ul>
+<li><p>URI: ldap://localhost/</p></li>
+<li><p>DN: dc=dominiolocal,dc=loc</p></li>
+<li><p>Conta admistrativa: cn=admin,dc=dominiolocal,dc=loc</p></li>
+<li><p>Password da conta administrativa: (mesmo password definido na instalaçao do openldap).</p></li>
+</ul>
+
+<p><a href="http://posterous.com/getfile/files.posterous.com/temp-2010-10-16/pcfxFuEiCEBxqgevixHnGbahcCnopAJdojAmfhsxwyiqBkydAsGlGtlsAqko/pam_ldap-1.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-1.png.scaled500-300x192.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-2.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-2.png.scaled1000-300x190.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-5.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-5.png.scaled1000-300x191.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-6.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-6.png.scaled1000-300x191.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-7.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-7.png.scaled1000-300x190.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-3.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-3.png.scaled1000-300x192.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-4.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-4.png.scaled1000-300x190.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-8.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-8.png.scaled1000-300x189.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-9.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-9.png.scaled1000-300x191.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-10.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-10.png.scaled1000-300x193.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-11.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-11.png.scaled1000-300x190.png" alt=""></a></p>
+
+<p><a href="http://blog.felipemunhoz.com/integrando-o-pam-ao-ldap">See and download the full gallery on posterous</a></p>
+
+<p>Conforme informado durante o wizard sera necessario editar o arquivo /etc/nsswitch.conf para que o sistema procure as informaçoes de autenticaçao na base ldap. O arquivo deve ser editado conforme exemplo a seguir:</p>
+
+<hr>
+
+<p>/etc/nsswitch.conf</p>
+
+<hr>
+
+<p>passwd:  files ldap<br>
+group:  files ldap<br>
+shadow:  files ldap</p>
+
+<p>hosts:  files dns<br>
+networks:  files ldap</p>
+
+<p>protocols:  db files<br>
+services:  db files<br>
+ethers:  db files<br>
+rpc:  db files</p>
+
+<p>netgroup:  nis</p>
+
+<hr>
+
+<p>Configurando o PAM para acessar a base LDAP</p>
+
+<p>Para que o PAM acesse a base LDAP e necessario editar os seguintes arquivos conforme abaixo:</p>
+
+<hr>
+
+<p>/etc/pam.d/common-account</p>
+
+<hr>
+
+<p>account sufficient pam<em>ldap.so<br>
+account required pam</em>unix.so try<em>first</em>pass</p>
+
+<hr>
+
+<p>/etc/pam.d/common-session</p>
+
+<hr>
+
+<p>_ _</p>
+
+<p>_ _</p>
+
+<p>_</p>
+
+<p>session required pam_mkhomedir.so skel=/etc/skel umask=0022 silent  </p>
+
+<hr>
+
+<p>session sufficient pam_unix.so</p>
+
+<hr>
+
+<p>_</p>
+
+<hr>
+
+<p>/etc/pam.d/common-auth</p>
+
+<hr>
+
+<p>auth required pam<em>nologin.so<br>
+auth required pam</em>env.so<br>
+auth sufficient pam<em>ldap.so<br>
+auth required pam</em>unix.so nullok<em>secure try</em>first_pass</p>
+
+<hr>
+
+<p>/etc/pam.d/common-password</p>
+
+<hr>
+
+<p>password  sufficient  pam_ldap.so</p>
+
+<p>password  required  pam<em>unix.so nullok obscure min=4 max=8 md5 try</em>first_pass</p>
+
+<hr>
+
+<p>Apos estas configuraçoes a autenticaçao de usuarios ja pode ser realizada atraves dos usuarios cadastrados na base LDAP.</p>
+
+<p>Para consultar quais usuarios estao disponiveis para autenticaçao execute o seguinte comando:</p>
+
+<h1>getent passwd</h1>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

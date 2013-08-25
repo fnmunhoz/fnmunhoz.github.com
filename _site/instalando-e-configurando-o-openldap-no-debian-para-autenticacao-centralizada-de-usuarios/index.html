@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Instalando e configurando o Openldap no Debian para Autenticação Centralizada de Usuários</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Felipe Munhoz</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Instalando e configurando o Openldap no Debian para Autenticação Centralizada de Usuários</h2>
+<p class="meta">16 Oct 2010</p>
+
+<div class="post">
+<p>Este tutorial ira apresentar os passos para a instalaçao e configuraçao do Openldap em um sistema debian-based de modo que os usuarios do sistema fiquem armazenados na base do servidor LDAP.</p>
+
+<p>Instalando o OpenLDAP</p>
+
+<p>A instalaçao do servidor OpenLDAP no Debian pelo apt-get e feita pela instalaçao do pacote slapd e do pacote de utilitarios ldap-utils:</p>
+
+<h1>apt-get install slapd ldap-utils</h1>
+
+<p>Durante a instalaçao e apresentado um wizard em que deve ser informada a senha administrativa do servidor openldap. Informe uma senha de sua preferencia.</p>
+
+<p>Apos este passo o servidor LDAP esta instalado e escutando na porta 389 que e a porta padrao do serviço. Para confirmar que o servidor esta online verifique se a porta 389 do sistema realmente esta em &#39;LISTEN&#39;. Para isso execute o netstat da seguinte forma:</p>
+
+<h1>netstat -ant |grep 389</h1>
+
+<p>O resultado deve ser algo parecido com o seguinte:</p>
+
+<p>servidor-ldap:/etc# netstat -ant |grep 389<br>
+tcp  0  0 0.0.0.0:389  0.0.0.0:*  LISTEN<br>
+tcp6  0  0 :::389  :::*  LISTEN </p>
+
+<p>Se o comando acima nao retornar nenhum resultado e porque o servidor nao esta funcionando corretamente.</p>
+
+<p>Configurando o Servidor OpenLDAP</p>
+
+<p>O pacote openldap do debian possui outro wizard que permite realizar as demais configuraçoes do servidor OpenLDAP. Para executar o wizard e necessario executar o dpgk-reconfigure da seguinte forma:</p>
+
+<h1>dpkg-reconfigure slapd</h1>
+
+<p>A primeira pergunta e se voce deseja que o wizard termine sem oferecer as opçoes de configuraçao. Responda que Nao.</p>
+
+<p>A segunda pergunta e sobre o dominio que sera utilizado para construir o DN do servidor LDAP. Neste exemplo foi definido o dominio &#39;dominiolocal.loc&#39;.</p>
+
+<p>A terceira pergunta e sobre o nome da organizaçao/empresa para ser usada no DN. Neste exemplo foi definido o nome &#39;minhaorganizacao&#39;.</p>
+
+<p>A quarta e quinta pergunta sao para definir novamente a senha de acesso ao servidor. Defina uma senha de sua preferencia.</p>
+
+<p>A sexta pergunta e sobre o backend da base de dados para ser utilizada. Escolha o backend HDB que possui alguns vantagens em relaçao ao BDB.</p>
+
+<p>A setima pergunta e para escolher se a base de dados sera removida quando o pacote slapd for removido complemente (purged). Escolha Nao</p>
+
+<p>A oitava pergunta explica que existem arquivos de uma configuraçao antiga do openldap que nao permitiram que continue com a configuraçao. Responda Sim para que a base seja movida para outro local.</p>
+
+<p>A nona pergunta define se a versao 2 do protocolo LDAP sera suportada. Responda Nao.<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-3.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-3.png.scaled1000-300x190.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-4.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-4.png.scaled1000-300x191.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-5.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-5.png.scaled1000-300x190.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-1.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-1.png.scaled1000-300x192.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-2.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-2.png.scaled1000-300x191.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-9.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-9.png.scaled1000-300x191.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-7.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-7.png.scaled1000-300x190.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-8.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-8.png.scaled1000-300x190.png" alt=""></a>
+<a href="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-6.png.scaled1000.png"><img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-6.png.scaled1000-300x192.png" alt=""></a></p>
+
+<p><a href="http://blog.felipemunhoz.com/instalando-e-configurando-o-openldap-no-debia">See and download the full gallery on posterous</a></p>
+
+<p>O que o wizard faz e gerar o arquivo de configuraçao do OpenLDAP que fica em /etc/ldap/slapd.conf. Acesse esse arquivo e verifique as configuraçoes geradas.</p>
+
+<p>Configurando o Cliente OpenLDAP</p>
+
+<p>As configuraçoes apresentadas acima sao para o servidor OpenLDAP. É preciso tambem configurar o cliente LDAP para que o mesmo acesse o servidor configurado.</p>
+
+<p>O arquivo de configuraçao do cliente OpenLDAP e o /etc/ldap/ldap.conf</p>
+
+<p>Edite este arquivo para que servidor possa ser acessado pelo cliente da seguinte forma:</p>
+
+<p>/etc/ldap/ldap.conf</p>
+
+<hr>
+
+<p>host 127.0.0.1<br>
+base dc=dominiolocal,dc=loc<br>
+uri ldap://localhost/<br>
+ldap_version 3<br>
+rootbinddn cn=admin,dc=dominiolocal,dc=loc</p>
+
+<hr>
+
+<p>Migrando os usuarios do sistema para a base LDAP</p>
+
+<p>Apos a instalaçao do servidor LDAP a base de dados esta apenas com as informaçoes basicas cadastradas.</p>
+
+<p>Para ver todo o conteudo da base LDAP ate o momento pode ser utilizado o comando &#39;slapcat&#39;.</p>
+
+<h1>slapcat</h1>
+
+<p>O slapcat realiza um &#39;dump&#39; na base no formato LDIF.</p>
+
+<p>Para que seja possivel a autenticaçao dos usuarios via LDAP e necessario importar as contas de usuario do sistema para a base LDAP. Para isso sao necessarios os arquivos de importaçao LDIF.</p>
+
+<p>Estes arquivos tem uma sintaxe bastante rigida e para facilitar este processo podemos utilizar os scripts de migraçao do pacote migrationtools. Para instalar basta executar o seguinte:</p>
+
+<h1>apt-get install migrationtools</h1>
+
+<p>Apos a instalaçao e necessario informar a configuraçao do servidor LDAP. Para isso edite o arquivo:</p>
+
+<h1>vim /usr/share/migrationtools/migrate_common.ph</h1>
+
+<p>E altere as seguinte opçoes:</p>
+
+<p>$DEFAULT<em>MAIL</em>DOMAIN = &quot;dominiolocal.loc&quot;;<br>
+$DEFAULT_BASE = &quot;dc=dominiolocal,dc=loc&quot;;</p>
+
+<p>Agora e possivel exportar as informaçoes com os seguintes comandos:</p>
+
+<p><em># cd /usr/share/migrationtools<br>
+_</em># ./migrate<em>group.pl /etc/group /root/group.ldif<br>
+_</em># ./migrate<em>passwd.pl /etc/passwd /root/passwd.ldif</em></p>
+
+<p>Executando os comandos acima serao gerados os arquivos LDIF com as informaçoes de todos os usuarios e grupos atuais do sistema. Entretanto na pratica nao devemos importar para a base LDAP as contas administrativas do sistema como por exemplo as contas &#39;bin&#39; e &#39;nobody&#39;. O mesmo vale para os grupos.</p>
+
+<p>Considerando isso, edite os arquivos exportados mantendo apenas as informaçoes dos usuarios que necessitarem realmente a autenticaçao centralizada na base ldap.</p>
+
+<p>Abaixo segue dois exemplos de arquivos LDIF para um grupo e usuario &#39;senacti&#39;.</p>
+
+<hr>
+
+<p>/root/group.ldif</p>
+
+<hr>
+
+<p>dn: cn=senacti,ou=Group,dc=dominiolocal,dc=loc<br>
+objectClass: posixGroup<br>
+objectClass: top<br>
+cn: senacti<br>
+userPassword: {crypt}x<br>
+gidNumber: 1001</p>
+
+<hr>
+
+<p>/root/passwd.ldif</p>
+
+<hr>
+
+<p>dn: uid=senacti,ou=People,dc=dominiolocal,dc=loc<br>
+uid: senacti<br>
+cn: senacti<br>
+objectClass: account<br>
+objectClass: posixAccount<br>
+objectClass: top<br>
+objectClass: shadowAccount<br>
+userPassword: {crypt}$1$Kcpij9aY$oFb9KKzEPrZZ69UyyqcsZ1<br>
+shadowLastChange: 14899<br>
+shadowMax: 99999<br>
+shadowWarning: 7<br>
+loginShell: /bin/bash<br>
+uidNumber: 1001<br>
+gidNumber: 1001<br>
+homeDirectory: /home/senacti<br>
+gecos: ,,,</p>
+
+<hr>
+
+<p>É preciso tambem criar um arquivo LDIF com os &quot;ramos&quot; People e Group que armazenarao os usuarios e grupos, respectivamente, na arvore LDAP. Segue um exemplo abaixo:</p>
+
+<hr>
+
+<p>/root/people_group.ldif</p>
+
+<hr>
+
+<p>dn: ou=People, dc=dominiolocal, dc=loc<br>
+ou: People<br>
+objectclass: organizationalUnit</p>
+
+<p>dn: ou=Group, dc=dominiolocal, dc=loc<br>
+ou: Group<br>
+objectclass: organizationalUnit</p>
+
+<hr>
+
+<p>Agora ja temos as informaçoes dos usuarios convertidas para o formato LDIF. Temos entao que importar as informaçoes para o servidor da seguinte forma:</p>
+
+<h1>/etc/init.d/slapd stop</h1>
+
+<h1>cd /root</h1>
+
+<h1>slapadd -l people_group.ldif</h1>
+
+<h1>slapadd -l group.ldif</h1>
+
+<h1>slapadd -l passwd.ldif</h1>
+
+<h1>/etc/init.d/slapd start</h1>
+
+<p>Execute novamente o aplicativo &#39;slapcat&#39; para ver que agora a base esta com as informaçoes dos usuarios na base LDAP.</p>
+
+<p>Com as configuraçoes realizadas acima a base LDAP esta configurada e pronta para que um serviço se conecte para realizar a autenticaçao.</p>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

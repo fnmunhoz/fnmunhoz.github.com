@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Configurando o servidor SSH para utilizar chaves de autenticação</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Felipe Munhoz</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Configurando o servidor SSH para utilizar chaves de autenticação</h2>
+<p class="meta">14 Nov 2010</p>
+
+<div class="post">
+<p>O serviço SSH utiliza por padrao a autenticaçao por senha, entretanto sempre existe uma pequena possibilidade de que um atacante descobrir esta senha de alguma forma, utilizando <a href="http://www.slideshare.net/fnmunhoz/engenharia-social-3590818">engenharia social</a> por exemplo.</p>
+
+<p>Para resolver este problema o SSH oferece uma soluçao, atraves do uso de chaves de autenticaçao, utilizando uma chave publica e uma chave privada.</p>
+
+<p>A chave publica e instalada nos servidores que serao acessados e a chave privada permanece somente no cliente com permissao para acessar os servidores, conforme imagem a seguir:<img src="http://blog.felipemunhoz.com/wp-content/uploads/2010/11/ssh_rsa_identity.gif.scaled500-278x300.gif" alt=""></p>
+
+<p>Caso o servidor SSH nao esteja instalado, veja <a href="http://blog.felipemunhoz.com/instalando-o-ssh-no-ubuntu-server">Instalando o SSH no Ubuntu Server</a>.</p>
+
+<p>Para gerar esse par de chaves, execute no cliente o seguinte comando:</p>
+
+<h1>ssh-keygen -t rsa</h1>
+
+<p>Este comando deve ser executado usando o login de usuario que sera utilizado para acessar o servidor SSH, caso contrario a autenticaçao nao vai funcionar.</p>
+
+<p>Escolha as opçoes padrao para geraçao da chave, basta teclar &#39;enter&#39;. Desta forma sera gerada a chave no diretorio $HOME/.ssh/ com o nome padrao &#39;id<em>rsa&#39; (chave privada) e &#39;id</em>rsa.pub&#39; (chave publica) e utilizando uma passphrase em branco.</p>
+
+<p>É muito importante proteger o arquivo da chave privada (id_rsa) pois qualquer um que tiver acesso a este arquivo podera utilizar sua chave para se autenticar em um servidor de forma indevida.</p>
+
+<p>Mantenha as permissoes desse arquivo com &quot;600&quot;.</p>
+
+<h1>chmod 600 $HOME/.ssh/id_rsa</h1>
+
+<p>Em seguida deve ser feita a copia da chave publica para o servidor permitindo que ela seja utilizada para autenticaçao</p>
+
+<h1>ssh-copy-id -i ~/.ssh/id_rsa.pub usuario@servidor</h1>
+
+<p>Desta forma voce ja pode se autenticar no servidor SSH remoto sem necessitar de senha, basta o seguinte:</p>
+
+<h1>ssh suario@servidor</h1>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

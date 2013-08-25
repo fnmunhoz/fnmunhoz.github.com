@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Configurando o OpenVPN: conexões instáveis</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Felipe Munhoz</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Configurando o OpenVPN: conexões instáveis</h2>
+<p class="meta">31 Mar 2011</p>
+
+<div class="post">
+<p>Um problema muito comum na utilização de VPNs é a utilização de conexões muito instáveis, como por exemplo, ADSLs ou 3G. Qualquer interrupção que ocorra na transmissão a VPN ficara off-line, sendo necessária uma intervenção de um administrador.</p>
+
+<p>Para tratar este tipo de situação o OpenVPN possui uma série de configurações que permitem o reestabelecimento da conexão. A seguir uma descrição de cada um deles.</p>
+
+<p><strong>keepalive 10 60</strong></p>
+
+<p>A configuração keepalive permite que a conexão seja reiniciada caso não ocorra resposta dentro de um determinado período.</p>
+
+<p>O primeiro número especifíca o intervalo, em segundos, de pings e o segundo o timeout. Após o timeout a VPN é automaticamente reiniciada. Caso a conexão não seja reestabelecida na primeira tentativa o OpenVPN tenta reconectar até tenha sucesso.</p>
+
+<p><strong>inactive 3600</strong></p>
+
+<p>A configuração inactive serve para especificar um tempo em segundos para que as tentativas de conexão sejam mantidas. No exemplo acima após 1 hora sem sucesso na conexão, o OpenVPN pára com as tentativas.</p>
+
+<p><strong>comp-lzo</strong></p>
+
+<p>A opção comp-lzo faz com que o OpenVPN passe a compactar os dados transmitidos através da VPN. O algoritmo utilizado é bastante leve, e portanto não será um grande empecilho com relação ao desempenho do processamento do servidor ou do cliente. </p>
+
+<p><strong>persist-key</strong>
+<strong>persist-tun</strong></p>
+
+<p>As opções de configuração persist-key e persist-tun fazem com que o OpenVPN mantenha tanto a interface de tunelamento quanto as chaves carregadas em memória, tornando o reestabelecimento da conexão mais rápido nos casos de queda. </p>
+
+<p><strong>float</strong></p>
+
+<p>A opção float é bastante útil quando se utiliza conexões com IP dinâmico. Desta forma ao trocar o IP a conexão é reestabelecida da mesma forma. Essa situação é muito comum quando se utiliza serviços de DNS dinâmico como NoIP por exemplo. </p>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>
