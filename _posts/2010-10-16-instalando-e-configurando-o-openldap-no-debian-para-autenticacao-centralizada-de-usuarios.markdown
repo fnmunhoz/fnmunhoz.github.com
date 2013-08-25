@@ -10,7 +10,7 @@ wordpress_id: 113
 ---
 
 
-    
+
 
 Este tutorial ira apresentar os passos para a instalaçao e configuraçao do Openldap em um sistema debian-based de modo que os usuarios do sistema fiquem armazenados na base do servidor LDAP.
 
@@ -52,9 +52,9 @@ O resultado deve ser algo parecido com o seguinte:
 
 
 
-servidor-ldap:/etc# netstat -ant |grep 389  
-tcp  0  0 0.0.0.0:389  0.0.0.0:*  LISTEN    
-tcp6  0  0 :::389  :::*  LISTEN 
+servidor-ldap:/etc# netstat -ant |grep 389
+tcp  0  0 0.0.0.0:389  0.0.0.0:*  LISTEN
+tcp6  0  0 :::389  :::*  LISTEN
 
 
 
@@ -117,18 +117,15 @@ A oitava pergunta explica que existem arquivos de uma configuraçao antiga do op
 
 
 
-A nona pergunta define se a versao 2 do protocolo LDAP sera suportada. Responda Nao.[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-3.png.scaled1000-300x190.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-3.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-4.png.scaled1000-300x191.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-4.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-5.png.scaled1000-300x190.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-5.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-1.png.scaled1000-300x192.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-1.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-2.png.scaled1000-300x191.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-2.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-9.png.scaled1000-300x191.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-9.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-7.png.scaled1000-300x190.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-7.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-8.png.scaled1000-300x190.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-8.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-6.png.scaled1000-300x192.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/openldap-6.png.scaled1000.png)
-
-
-[See and download the full gallery on posterous](http://blog.felipemunhoz.com/instalando-e-configurando-o-openldap-no-debia)
+A nona pergunta define se a versao 2 do protocolo LDAP sera suportada. Responda Nao.[![](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-3.png.scaled1000-300x190.png)](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-3.png.scaled1000.png)
+[![](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-4.png.scaled1000-300x191.png)](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-4.png.scaled1000.png)
+[![](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-5.png.scaled1000-300x190.png)](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-5.png.scaled1000.png)
+[![](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-1.png.scaled1000-300x192.png)](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-1.png.scaled1000.png)
+[![](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-2.png.scaled1000-300x191.png)](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-2.png.scaled1000.png)
+[![](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-9.png.scaled1000-300x191.png)](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-9.png.scaled1000.png)
+[![](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-7.png.scaled1000-300x190.png)](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-7.png.scaled1000.png)
+[![](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-8.png.scaled1000-300x190.png)](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-8.png.scaled1000.png)
+[![](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-6.png.scaled1000-300x192.png)](/images/instalando-e-configurando-o-openldap-no-debian-para-autenticacao-centralizada-de-usuarios/openldap-6.png.scaled1000.png)
 
 
 
@@ -168,10 +165,10 @@ Edite este arquivo para que servidor possa ser acessado pelo cliente da seguinte
 
 
 
-host 127.0.0.1  
-base dc=dominiolocal,dc=loc  
-uri ldap://localhost/  
-ldap_version 3  
+host 127.0.0.1
+base dc=dominiolocal,dc=loc
+uri ldap://localhost/
+ldap_version 3
 rootbinddn cn=admin,dc=dominiolocal,dc=loc
 
 
@@ -237,7 +234,7 @@ E altere as seguinte opçoes:
 
 
 
-$DEFAULT_MAIL_DOMAIN = "dominiolocal.loc";  
+$DEFAULT_MAIL_DOMAIN = "dominiolocal.loc";
 $DEFAULT_BASE = "dc=dominiolocal,dc=loc";
 
 
@@ -248,8 +245,8 @@ Agora e possivel exportar as informaçoes com os seguintes comandos:
 
 
 
-_# cd /usr/share/migrationtools  
-__# ./migrate_group.pl /etc/group /root/group.ldif  
+_# cd /usr/share/migrationtools
+__# ./migrate_group.pl /etc/group /root/group.ldif
 __# ./migrate_passwd.pl /etc/passwd /root/passwd.ldif_
 
 
@@ -288,11 +285,11 @@ Abaixo segue dois exemplos de arquivos LDIF para um grupo e usuario 'senacti'.
 
 
 
-dn: cn=senacti,ou=Group,dc=dominiolocal,dc=loc  
-objectClass: posixGroup  
-objectClass: top  
-cn: senacti  
-userPassword: {crypt}x  
+dn: cn=senacti,ou=Group,dc=dominiolocal,dc=loc
+objectClass: posixGroup
+objectClass: top
+cn: senacti
+userPassword: {crypt}x
 gidNumber: 1001
 
 
@@ -319,21 +316,21 @@ gidNumber: 1001
 
 
 
-dn: uid=senacti,ou=People,dc=dominiolocal,dc=loc  
-uid: senacti  
-cn: senacti  
-objectClass: account  
-objectClass: posixAccount  
-objectClass: top  
-objectClass: shadowAccount  
-userPassword: {crypt}$1$Kcpij9aY$oFb9KKzEPrZZ69UyyqcsZ1  
-shadowLastChange: 14899  
-shadowMax: 99999  
-shadowWarning: 7  
-loginShell: /bin/bash  
-uidNumber: 1001  
-gidNumber: 1001  
-homeDirectory: /home/senacti  
+dn: uid=senacti,ou=People,dc=dominiolocal,dc=loc
+uid: senacti
+cn: senacti
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+userPassword: {crypt}$1$Kcpij9aY$oFb9KKzEPrZZ69UyyqcsZ1
+shadowLastChange: 14899
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/bash
+uidNumber: 1001
+gidNumber: 1001
+homeDirectory: /home/senacti
 gecos: ,,,
 
 
@@ -367,15 +364,15 @@ gecos: ,,,
 
 
 
-dn: ou=People, dc=dominiolocal, dc=loc  
-ou: People  
+dn: ou=People, dc=dominiolocal, dc=loc
+ou: People
 objectclass: organizationalUnit
 
 
 
 
-dn: ou=Group, dc=dominiolocal, dc=loc  
-ou: Group  
+dn: ou=Group, dc=dominiolocal, dc=loc
+ou: Group
 objectclass: organizationalUnit
 
 
@@ -391,11 +388,11 @@ Agora ja temos as informaçoes dos usuarios convertidas para o formato LDIF. Tem
 
 
 
-# /etc/init.d/slapd stop  
-# cd /root  
-# slapadd -l people_group.ldif  
-# slapadd -l group.ldif  
-# slapadd -l passwd.ldif  
+# /etc/init.d/slapd stop
+# cd /root
+# slapadd -l people_group.ldif
+# slapadd -l group.ldif
+# slapadd -l passwd.ldif
 # /etc/init.d/slapd start
 
 
@@ -410,4 +407,4 @@ Com as configuraçoes realizadas acima a base LDAP esta configurada e pronta par
 
 
 
-  
+

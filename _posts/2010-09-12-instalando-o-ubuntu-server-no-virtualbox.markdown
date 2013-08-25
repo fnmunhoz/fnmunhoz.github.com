@@ -9,7 +9,7 @@ wordpress_id: 125
 ---
 
 
-    
+
 
 Neste tutorial vamos mostrar como instalar o sistema operacional [Ubuntu Server Edition](http://www.ubuntu.com/server) 10.04 32 bits no VirtualBox.
 
@@ -40,7 +40,7 @@ Va ate a [pagina de downloads do Ubuntu Server](http://www.ubuntu.com/server/get
 
 
 
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-1.png.scaled500-300x210.png)](http://posterous.com/getfile/files.posterous.com/temp-2010-09-12/jxreJGvgizfumzAkchjqjjcxtupwCBAfssFgdxJfDIggcrpdowcfqoDndtwu/ubuntu-server-1.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-1.png.scaled500-300x210.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-1.png.scaled500.png)
 
 
 
@@ -62,17 +62,17 @@ Com a imagem ISO do Ubuntu Server baixada va ate o VirtualBox e configure a maqu
 
 
 
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-2.png.scaled1000-300x214.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-2.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-3.png.scaled1000-300x188.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-3.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-4.png.scaled1000-300x188.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-4.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-5.png.scaled1000-300x188.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-5.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-6.png.scaled1000-300x188.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-6.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-7.png.scaled1000-300x180.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-7.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-8.png.scaled1000-300x180.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-8.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-9.png.scaled1000-300x180.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-9.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-10.png.scaled1000-300x180.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-10.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-11.png.scaled1000-300x188.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-11.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-12.png.scaled1000-300x214.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-12.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-2.png.scaled1000-300x214.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-2.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-3.png.scaled1000-300x188.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-3.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-4.png.scaled1000-300x188.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-4.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-5.png.scaled1000-300x188.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-5.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-6.png.scaled1000-300x188.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-6.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-7.png.scaled1000-300x180.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-7.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-8.png.scaled1000-300x180.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-8.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-9.png.scaled1000-300x180.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-9.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-10.png.scaled1000-300x180.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-10.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-11.png.scaled1000-300x188.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-11.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-12.png.scaled1000-300x214.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-12.png.scaled1000.png)
 
 
 [See and download the full gallery on posterous](http://blog.felipemunhoz.com/instalando-o-ubuntu-server-no-virtualbox)
@@ -80,7 +80,7 @@ Com a imagem ISO do Ubuntu Server baixada va ate o VirtualBox e configure a maqu
 
 
 
-Neste momento o VirtualBox esta configurado e pronto para dar boot no Ubuntu Server e iniciar a instalaçao. 
+Neste momento o VirtualBox esta configurado e pronto para dar boot no Ubuntu Server e iniciar a instalaçao.
 
 
 
@@ -141,37 +141,37 @@ O wizard a seguir apresenta todos os passos da instalaçao do Ubuntu Server:
 
 
 
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-12.png.scaled500-300x214.png)](http://posterous.com/getfile/files.posterous.com/temp-2010-09-12/kyDhazlJjBHpjrvzlFkmmvbFovxrplfhbpgxaFuolzqwDHothcrsJDdJjHIv/ubuntu-server-12.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-14.png.scaled1000-300x191.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-14.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-15.png.scaled1000-300x191.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-15.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-16.png.scaled1000-300x222.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-16.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-17.png.scaled1000-300x191.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-17.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-18.png.scaled1000-300x191.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-18.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-19.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-19.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-20.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-20.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-21.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-21.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-25.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-25.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-26.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-26.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-27.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-27.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-22.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-22.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-23.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-23.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-24.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-24.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-28.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-28.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-29.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-29.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-30.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-30.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-31.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-31.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-32.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-32.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-33.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-33.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-34.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-34.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-35.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-35.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-36.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-36.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-37.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-37.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-38.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-38.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-40.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-40.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-41.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-41.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-42.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-42.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-39.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-39.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-43.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/ubuntu-server-43.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-12.png.scaled500-300x214.png)](http://posterous.com/getfile/files.posterous.com/temp-2010-09-12/kyDhazlJjBHpjrvzlFkmmvbFovxrplfhbpgxaFuolzqwDHothcrsJDdJjHIv/ubuntu-server-12.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-14.png.scaled1000-300x191.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-14.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-15.png.scaled1000-300x191.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-15.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-16.png.scaled1000-300x222.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-16.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-17.png.scaled1000-300x191.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-17.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-18.png.scaled1000-300x191.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-18.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-19.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-19.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-20.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-20.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-21.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-21.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-25.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-25.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-26.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-26.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-27.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-27.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-22.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-22.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-23.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-23.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-24.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-24.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-28.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-28.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-29.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-29.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-30.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-30.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-31.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-31.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-32.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-32.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-33.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-33.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-34.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-34.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-35.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-35.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-36.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-36.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-37.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-37.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-38.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-38.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-40.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-40.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-41.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-41.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-42.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-42.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-39.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-39.png.scaled1000.png)
+[![](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-43.png.scaled1000-300x246.png)](/images/instalando-o-ubuntu-server-no-virtualbox/ubuntu-server-43.png.scaled1000.png)
 
 
 [See and download the full gallery on posterous](http://blog.felipemunhoz.com/instalando-o-ubuntu-server-no-virtualbox)
@@ -186,4 +186,4 @@ Apos passar pelos passos apresentados no wizard acima, o computador sera reinici
 
 
 
-  
+

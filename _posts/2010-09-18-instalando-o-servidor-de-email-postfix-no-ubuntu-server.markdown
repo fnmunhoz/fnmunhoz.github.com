@@ -9,7 +9,7 @@ wordpress_id: 124
 ---
 
 
-    
+
 
 O [Postfix](http://www.postfix.org/) e um servidor de email simples de configurar para os casos mais comuns, tem uma boa performance e um historico de segurança bastante aceitavel, alem de abranger diversas situaçoes de uso e configuraçoes. Alem disso existe muita documentaçao na internet sobre ele, ja que e um dos mais usados em servidores linux.
 
@@ -51,9 +51,9 @@ Durante a instalaçao sera executado um wizard para uma configuraçao basica do 
 
 
 
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/postfix-1.png.scaled500-300x260.png)](http://posterous.com/getfile/files.posterous.com/temp-2010-09-18/GarcnbkGrmprxbupnnxdrgswvolxtoBkAngvznpoAnqhjgsbctgxqgEhiuuB/postfix-1.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/postfix-2.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/postfix-2.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/postfix-3.png.scaled1000-300x246.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/postfix-3.png.scaled1000.png)
+[![](/images/instalando-o-servidor-de-email-postfix-no-ubuntu-server/postfix-1.png.scaled500-300x260.png)](/images/instalando-o-servidor-de-email-postfix-no-ubuntu-server/postfix-1.png.scaled500.png)
+[![](/images/instalando-o-servidor-de-email-postfix-no-ubuntu-server/postfix-2.png.scaled1000-300x246.png)](/images/instalando-o-servidor-de-email-postfix-no-ubuntu-server/postfix-2.png.scaled1000.png)
+[![](/images/instalando-o-servidor-de-email-postfix-no-ubuntu-server/postfix-3.png.scaled1000-300x246.png)](/images/instalando-o-servidor-de-email-postfix-no-ubuntu-server/postfix-3.png.scaled1000.png)
 
 
 [See and download the full gallery on posterous](http://blog.felipemunhoz.com/instalando-o-servidor-de-email-postifix-no-ub)
@@ -84,4 +84,4 @@ Neste wizard sao feitas duas perguntas:
 Estas sao as configuraçoes basicas que permitem o servidor de email funcionar. Apos estas perguntas a instalaçao termina e o servidor esta funcionando.
 
 
-  
+

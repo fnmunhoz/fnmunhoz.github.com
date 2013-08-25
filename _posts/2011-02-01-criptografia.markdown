@@ -20,7 +20,7 @@ Já o processo de engenharia reversa, isto é, transformar a informação de mod
 Para que estas técnicas sejam aplicadas é necessário tanto o conteúdo a ser criptografado quanto a chave que será utilizada para realizar o processo.
 
 
-Obviamente esta chave deve ser mantida em segredo, de forma que somente quem tem acesso a chave consiga entender o conteúdo da mensagem.[![](http://blog.felipemunhoz.com/wp-content/uploads/2011/02/criptografia_01-300x181.png)](http://blog.felipemunhoz.com/wp-content/uploads/2011/02/criptografia_01.png)
+Obviamente esta chave deve ser mantida em segredo, de forma que somente quem tem acesso a chave consiga entender o conteúdo da mensagem.[![](/images/criptografia/criptografia_01-300x181.png)](/images/criptografia/criptografia_01.png)
 
 Para a maioria dos casos, atualmente existem dois tipos de criptografia: a de chave simétrica e a de chave pública.
 
@@ -41,11 +41,11 @@ Garante que somente o receptor conseguirá ler o conteúdo
 **Autenticidade**
 Garante que realmente foi o remetente quem enviou o conteúdo.
 
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2011/02/confidencialidade-300x146.png)](http://blog.felipemunhoz.com/wp-content/uploads/2011/02/confidencialidade.png)
+[![](/images/criptografia/confidencialidade-300x146.png)](/images/criptografia/confidencialidade.png)
 
 
-## 
+##
 
 
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2011/02/autenticidade-300x143.png)](http://blog.felipemunhoz.com/wp-content/uploads/2011/02/autenticidade.png)
+[![](/images/criptografia/autenticidade-300x143.png)](/images/criptografia/autenticidade.png)
 

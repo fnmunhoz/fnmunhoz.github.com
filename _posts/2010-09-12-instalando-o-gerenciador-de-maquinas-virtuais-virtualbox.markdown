@@ -32,11 +32,11 @@ $ ./VirtualBox
 
 Será apresentada uma tela com a licença de uso, arraste a barra de rolagem até o final e aceite a licença para prosseguir.
 
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/virtualbox-1.png.scaled500-300x225.png)](http://posterous.com/getfile/files.posterous.com/temp-2010-09-12/ACaFHctlICeqeviqmDqEBauubtaEvjzkmjpkuFweaosklfrxciwbdriGhfAg/virtualbox-1.png.scaled1000.png)
+[![](/images/instalando-o-gerenciador-de-maquinas-virtuais-virtualbox/virtualbox-1.png.scaled500-300x225.png)](/images/instalando-o-gerenciador-de-maquinas-virtuais-virtualbox/virtualbox-1.png.scaled500.png)
 
 Em seguida aparecerá a tela inicial do VirtualBox, conforme imagem a seguir.
 
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/virtualbox-2.png.scaled1000-300x214.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/09/virtualbox-2.png.scaled1000.png)
+[![](/images/instalando-o-gerenciador-de-maquinas-virtuais-virtualbox/virtualbox-2.png.scaled1000-300x214.png)](/images/instalando-o-gerenciador-de-maquinas-virtuais-virtualbox/virtualbox-2.png.scaled1000.png)
 
 
 Pronto o VirtualBox está instalado, o próximo passo é configurar uma máquina virtual, o que será mostrado no próximo tutorial.

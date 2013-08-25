@@ -9,7 +9,7 @@ wordpress_id: 109
 ---
 
 
-    
+
 
 O serviço SSH utiliza por padrao a autenticaçao por senha, entretanto sempre existe uma pequena possibilidade de que um atacante descobrir esta senha de alguma forma, utilizando [engenharia social](http://www.slideshare.net/fnmunhoz/engenharia-social-3590818) por exemplo.
 
@@ -21,7 +21,7 @@ Para resolver este problema o SSH oferece uma soluçao, atraves do uso de chaves
 
 
 
-A chave publica e instalada nos servidores que serao acessados e a chave privada permanece somente no cliente com permissao para acessar os servidores, conforme imagem a seguir:![](http://blog.felipemunhoz.com/wp-content/uploads/2010/11/ssh_rsa_identity.gif.scaled500-278x300.gif)
+A chave publica e instalada nos servidores que serao acessados e a chave privada permanece somente no cliente com permissao para acessar os servidores, conforme imagem a seguir:![](/images/configurando-o-servidor-ssh-para-utilizar-chaves-de-autenticacao/ssh_rsa_identity.gif.scaled500-278x300.gif)
 
 
 
@@ -91,4 +91,4 @@ Desta forma voce ja pode se autenticar no servidor SSH remoto sem necessitar de 
 
 
 
-  
+

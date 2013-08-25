@@ -9,14 +9,14 @@ wordpress_id: 112
 ---
 
 
-    
+
 
 Nos proximos passos estaremos configurando o PAM para autenticar usuarios que estao na base LDAP.
 
 
 
 
-  
+
 
 
 
@@ -81,17 +81,17 @@ Durante a instalaçao sera apresentado um wizard para facilitar o processo de co
 
 
 
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-1.png.scaled500-300x192.png)](http://posterous.com/getfile/files.posterous.com/temp-2010-10-16/pcfxFuEiCEBxqgevixHnGbahcCnopAJdojAmfhsxwyiqBkydAsGlGtlsAqko/pam_ldap-1.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-2.png.scaled1000-300x190.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-2.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-5.png.scaled1000-300x191.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-5.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-6.png.scaled1000-300x191.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-6.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-7.png.scaled1000-300x190.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-7.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-3.png.scaled1000-300x192.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-3.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-4.png.scaled1000-300x190.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-4.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-8.png.scaled1000-300x189.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-8.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-9.png.scaled1000-300x191.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-9.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-10.png.scaled1000-300x193.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-10.png.scaled1000.png)
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-11.png.scaled1000-300x190.png)](http://blog.felipemunhoz.com/wp-content/uploads/2010/10/pam_ldap-11.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-1.png.scaled500-300x192.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-1.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-2.png.scaled1000-300x190.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-2.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-5.png.scaled1000-300x191.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-5.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-6.png.scaled1000-300x191.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-6.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-7.png.scaled1000-300x190.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-7.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-3.png.scaled1000-300x192.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-3.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-4.png.scaled1000-300x190.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-4.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-8.png.scaled1000-300x189.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-8.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-9.png.scaled1000-300x191.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-9.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-10.png.scaled1000-300x193.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-10.png.scaled1000.png)
+[![](/images/integrando-o-pam-ao-ldap/pam_ldap-11.png.scaled1000-300x190.png)](/images/integrando-o-pam-ao-ldap/pam_ldap-11.png.scaled1000.png)
 
 
 [See and download the full gallery on posterous](http://blog.felipemunhoz.com/integrando-o-pam-ao-ldap)
@@ -125,22 +125,22 @@ Conforme informado durante o wizard sera necessario editar o arquivo /etc/nsswit
 
 
 
-passwd:  files ldap  
-group:  files ldap  
+passwd:  files ldap
+group:  files ldap
 shadow:  files ldap
 
 
 
 
-hosts:  files dns  
+hosts:  files dns
 networks:  files ldap
 
 
 
 
-protocols:  db files  
-services:  db files  
-ethers:  db files  
+protocols:  db files
+services:  db files
+ethers:  db files
 rpc:  db files
 
 
@@ -184,7 +184,7 @@ Para que o PAM acesse a base LDAP e necessario editar os seguintes arquivos conf
 
 
 
-account sufficient pam_ldap.so  
+account sufficient pam_ldap.so
 account required pam_unix.so try_first_pass
 
 
@@ -218,7 +218,7 @@ _ _
 _
 
 
-session required pam_mkhomedir.so skel=/etc/skel umask=0022 silent  
+session required pam_mkhomedir.so skel=/etc/skel umask=0022 silent
 ___
 
 
@@ -248,9 +248,9 @@ _
 
 
 
-auth required pam_nologin.so  
-auth required pam_env.so  
-auth sufficient pam_ldap.so  
+auth required pam_nologin.so
+auth required pam_env.so
+auth sufficient pam_ldap.so
 auth required pam_unix.so nullok_secure try_first_pass
 
 
@@ -272,7 +272,7 @@ auth required pam_unix.so nullok_secure try_first_pass
 
 
 
---------------------------------------  
+--------------------------------------
 
 
 
@@ -315,4 +315,4 @@ Para consultar quais usuarios estao disponiveis para autenticaçao execute o seg
 # getent passwd
 
 
-  
+

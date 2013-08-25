@@ -23,7 +23,7 @@ Considere o caso de uma universidade com vários campus separados por uma distâ
 Este caso é típico para o uso de uma VPN, conectar dois pontos distantes através da infraestrutura já existente nos dois pontos e de forma segura.
 
 
-[![](http://blog.felipemunhoz.com/wp-content/uploads/2011/01/Virtual_Private_Network_overview-300x212.png)](http://blog.felipemunhoz.com/wp-content/uploads/2011/01/Virtual_Private_Network_overview.png)
+[![](/images/redes-virtuais-privadas/Virtual_Private_Network_overview-300x212.png)](/images/redes-virtuais-privadas/Virtual_Private_Network_overview.png)
 
 
 
