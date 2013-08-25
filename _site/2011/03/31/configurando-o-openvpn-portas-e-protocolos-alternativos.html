@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Configurando o OpenVPN: portas e protocolos alternativos</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Configurando o OpenVPN: portas e protocolos alternativos</h2>
+<p class="meta">31 Mar 2011</p>
+
+<div class="post">
+<p>Por padrão o OpenVPN escuta na porta 1194 utilizando o protocolo TCP. É possível alterar tanto a porta de escuta quanto o protocolo utilizado.</p>
+
+<p>As configurações devem ser realizadas nos arquivos de configuração (.conf) de cada VPN criada, tanto nos clientes quanto no servidor.</p>
+
+<p>Para especificar em qual porta o OpenVPN escutará a opção é a seguinte:</p>
+
+<p><strong>port 12333</strong></p>
+
+<p>Para alterar para o protocolo UDP a configuração é a seguinte:</p>
+
+<p><strong>proto udp</strong></p>
+
+<p>A vantagem em utilizar o protocolo UDP em vez do TCP é devido à sobrecarga desnecessária que o TCP implica. Como o protocolo TCP controla o tratamento de erros na transmissão de pacotes, ele acaba realizando uma verificação extra nos pacotes, já que os protocolos que serão utilizados através da VPN já fazem isso, como por exemplo o HTTP.</p>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

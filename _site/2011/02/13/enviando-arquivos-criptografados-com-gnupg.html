@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Enviando arquivos criptografados com GnuPG</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Enviando arquivos criptografados com GnuPG</h2>
+<p class="meta">13 Feb 2011</p>
+
+<div class="post">
+<p>Para encriptar um arquivo utilizando a chave pública de uma pessoa, você deve primeiramente conseguir a chave pública da pessoa.</p>
+
+<p>Isso pode ser feito de duas formas, solicitando que a pessoa envie a chave pública por email ou até mesmo pessoalmente, ou caso a pessoa disponibilize a chave pública dela em um servidor você pode fazer download da mesma.</p>
+
+<p>Disponibilizar chaves públicas em um servidor na internet facilita bastante o processo, pois quem deseja enviar os arquivos encriptados não precisa entrar em contato solicitando o envio da chave.</p>
+
+<p>Para listar as chaves que já estão disponíveis no gpg, utilize o seguinte comando:</p>
+
+<p><code>$ gpg --list-keys</code></p>
+
+<p>Caso não retorne nenhum resultado é porque ainda não existe nenhuma chave armazenada no sistema.</p>
+
+<p>É bom lembrar que por se tratar de uma chave pública, não há problema algum de segurança em disponibilizá-la em um servidor. Veja mais sobre chaves públicas e privadas no post sobre <a href="/criptografia/">criptografia</a>.</p>
+
+<p>Para importar a chave pública de uma pessoa com o gpg pode ser utilizado o comando de busca, da seguinte forma:</p>
+
+<p><code>$ gpg --search-keys &#39;NomeOuEmailDaPessoa&#39;</code></p>
+
+<p>Serão listados todas as chaves armazenadas que correspondem a busca, para importar a chave basta digitar o número do resultado.</p>
+
+<p>A partir de agora para encriptar um arquivo com a chave importada pode ser utilizado o seguinte comando do gpg:</p>
+
+<p><code>$ gpg --encrypt --recipient &#39;User ID&#39; secret.txt</code></p>
+
+<p>Será gerado um arquivo encriptado secret.txt.gpg que pode ser enviado com segurança para o destinatário.</p>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

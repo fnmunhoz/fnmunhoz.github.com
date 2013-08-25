@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Deploy de aplicações RubyOnRails: criando seus próprios pacotes</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Deploy de aplicações RubyOnRails: criando seus próprios pacotes</h2>
+<p class="meta">09 Jun 2011</p>
+
+<div class="post">
+<p>Devido as necessidades do projeto que estamos trabalhando na <a href="http://www.oncast.com.br">OnCast</a> começamos uma pesquisa por soluções de deploy para projetos em RubyOnRails.</p>
+
+<p>Estamos usando Rails 3 com Ruby 1.9.2 e para o ambiente de desenvolvimento <a href="http://rvm.beginrescueend.com">RVM</a> é a melhor solução, pois podemos facilmente alterar a versão do ruby que estamos utilizando.</p>
+
+<p>Entretanto para o ambiente de produção as dificuldades são maiores, e as opções também vamos a elas.</p>
+
+<h3>Pacotes nativos do sistema operacional</h3>
+
+<p>Esta seria a solução mais trivial, se nossa aplicação depende do ruby 1.9.2, poderiamos utlizar o apt-get e instalar esta versão através de um comando como esse:
+<code>
+$ sudo apt-get install ruby-1.9.2
+</code>
+No entanto na maioria das distribuições esta versão recente do ruby não está disponível, no ubuntu 10.10, por exemplo, a última versão disponível é o ruby-1.9.1. </p>
+
+<p>Além disso muitas outras incompatibilidades acabam aparecendo como versões desatualizadas de outros aplicativos, como o rubygems, por exemplo.</p>
+
+<p>Portanto utilizar os pacotes do sistema operacional se tornou inviável para o nosso caso.</p>
+
+<h3>RVM em produção</h3>
+
+<p>Uma alternativa seria então utilizar o RVM, pois desta forma teriamos o controle de qual versão do ruby estariamos utilizando. Para instalar a versão 1.9.2, seria necessário o seguinte comando:
+`</p>
+
+<h1>rvm install 1.9.2</h1>
+
+<p>`</p>
+
+<p>Utilizar RVM em produção não seria uma péssima escolha, já que no final das contas, o que o RVM faz, é baixar, compilar e instalar o ruby em um ambiente isolado, alterando os paths, permitindo que tenhamos diversas versões do ruby no mesmo sistema e que possamos alternar entre estas versões facilmente.</p>
+
+<p>Entretanto em nosso ambiente de deploy em momento algum precisamos destas capacidades que o RVM nos proporciona, pelo contrário, o RVM acaba trazendo uma certa complexidade ao ambiente.</p>
+
+<p>Por mais que sua utilização seja simples para desenvolvedores ruby que já estão acostumados, pode se tornar um inconveniente para profissionais de outras áreas, como sysadmins, que não necessitam entender do ecossistema do ruby e do rails para instalar a aplicação.</p>
+
+<p>Além disso, o mais comum é instalar o <a href="http://rvm.beginrescueend.com/rvm/install/">RVM em modo single-user</a> e não para todo o sistema, o que embora possa ser contornado, é uma complexidade a mais a ser resolvida.</p>
+
+<h3>Criando pacotes próprios</h3>
+
+<p>Então por que não unir o melhor dos dois mundos? Ter um pacote nativo do sistema operacional com a versão específica que precisamos.</p>
+
+<p>Para atingir esta proposta o <a href="https://github.com/jordansissel/fpm/">projeto FPM no GitHub</a> facilitando a criação de um pacote nativo para sistema operacional de destino.</p>
+
+<p>Atualmente o FPM tem suporte para os formatos DEB e RPM, dos sistemas baseados em Debian e Red Hat respectivamente.</p>
+
+<p>Existem diversas outras ferramentas que realizam este trabalho, entretanto o objetivo do FPM é tornar isto uma tarefa trivial do ponto de vista dos desenvolvedores ou <a href="http://en.wikipedia.org/wiki/DevOps">DevOps</a> como está na moda :)</p>
+
+<p>É importante ressaltar que o FPM não é a solução completa, ainda será necessário, no caso do ruby, baixar, e compilar a linguagem, para que depois ela possa ser empacotada com o FPM.</p>
+
+<p>Felizmente estas tarefas podem ser resolvidas utilizando um Makefile como mostram alguns <a href="https://github.com/jordansissel/fpm/tree/master/examples">exemplos no repositório do FPM</a>.</p>
+
+<p>Referências:</p>
+
+<p>[1] <a href="http://goo.gl/sWs3Z">http://goo.gl/sWs3Z</a>
+[2] <a href="https://github.com/jordansissel/fpm">https://github.com/jordansissel/fpm</a>
+[3] <a href="http://www.slideshare.net/fabiokung/ruby-and-rails-packaging-to-production">http://www.slideshare.net/fabiokung/ruby-and-rails-packaging-to-production</a></p>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

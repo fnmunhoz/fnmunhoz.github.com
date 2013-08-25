@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Criando túneis seguros com SSH</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Criando túneis seguros com SSH</h2>
+<p class="meta">03 Apr 2011</p>
+
+<div class="post">
+<p>Criar uma VPN com o OpenVPN, por exemplo, permite que clientes se conectem de forma transparente entre a filial e a matriz de uma empresa. Entretanto existem situações em que uma configuração de tunelamento mais simples pode ser utilizada, através do próprio SSH que normalmente já está instalado em grande parte dos servidores.</p>
+
+<p>Digamos que você queira se conectar no serviço HTTP de um servidor de intranet da empresa que só está disponível dentro da rede da empresa.</p>
+
+<p>Isso pode ser feito através do SSH da seguinte forma:</p>
+
+<p><code>
+ssh -f -N -L{PORTA_LOCAL}:{IP_DO_SERVIDOR}:{PORTA_DO_SERVICO} {USUARIO}@{IP_DO_SERVIDOR}
+</code></p>
+
+<p>Onde,</p>
+
+<p>PORTA<em>LOCAL: será a porta que você irá utilizar para se conectar ao serviço remoto
+IP</em>DO<em>SERVIDOR: será o endereço IP ou DNS do servidor que será realizada a conexão
+PORTA</em>DO_SERVICO: será a porta do serviço que desejamos nos conectar
+USUARIO: Usuário SSH válido do servidor </p>
+
+<p>Por exemplo, para acessar o serviço <strong>HTTP</strong> do servidor <strong>intranet.lan</strong>
+utilizando a porta local 5000, o comando seria o seguinte:</p>
+
+<p><code>
+ssh -f -N -L5000:intranet.lan:80 user@intranet.lan
+</code></p>
+
+<p>A partir de agora a intranet remota estará disponível para acesso através do endereço http://localhost:5000/
+da máquina que originou o tunelamento.</p>
+
+<p>Outro exemplo poderia ser a criação do Túnel para a utilização de um proxy:</p>
+
+<p><code>
+ssh -f -N -L3128:proxy.lan:3128 user@proxy.lan
+</code></p>
+
+<p>Com esta configuração bastaria que o navegador fosse apontado para o proxy em localhost:3128 e todo tráfego do navegador seria redirecionado para o proxy através do tunelamento criado. </p>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

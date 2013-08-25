@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Instalando um Ambiente de Serviço de Email Passo a Passo no Debian com Postfix, Courier e Squirrelmail</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Instalando um Ambiente de Serviço de Email Passo a Passo no Debian com Postfix, Courier e Squirrelmail</h2>
+<p class="meta">09 Oct 2010</p>
+
+<div class="post">
+<p>Este tutorial ira demonstrar os passos necessarios para a instalaçao e configuraçao de um ambiente de serviço de email em sistemas Debian-based, utilizando os softwares Postfix como servidor SMTP, Courier como servidores POP3 e IMAP e Squirrelmail como webmail.</p>
+
+<p>Instalando o Servidor SMTP Postfix</p>
+
+<p>A instalaçao do servidor SMTP postfix e simples atraves do apt-get:</p>
+
+<h1>apt-get install posfix</h1>
+
+<p>Durante a instalaçao sera apresentado um wizard para a definiçao das configuraçoes principais.</p>
+
+<p>Na primeira delas deve ser informado o perfil do servidor que esta sendo instalado. Neste tutorial sera utilizada a opçao _&quot;Internet site&quot; _que permite ao servidor enviar e receber emails diretamente.</p>
+
+<p>A segunda pergunta refere-se a configuraçao &quot;mail name&quot; que sera o dominio inserido nas mensagens enviadas, para os testes pode ser um dominio qualquer, por exemplo dominiolocal.lan</p>
+
+<p>Apos estes dois passo o servidor esta configurado e funcionando para as situaçoes mais basicas.</p>
+
+<p>Configurando o Postfix</p>
+
+<p>O arquivo de configuraçao principal do postfix e o main.cf e no debian fica localizado no diretorio /etc/postfix.</p>
+
+<p>Edite este arquivo de forma que ele tenha pelo menos as opçoes abaixo, de acordo com as configuraçoes de dominio do sistema operacional instalado.</p>
+
+<p>myhostname = debian1.dominiolocal.lan<br>
+alias<em>maps = hash:/etc/aliases<br>
+alias</em>database = hash:/etc/aliases<br>
+myorigin = /etc/mailname<br>
+mydestination = dominiolocal.lan, debian1.dominiolocal.lan, localhost.dominiolocal.lan, localhost<br>
+relayhost =<br>
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128<br>
+mailbox<em>command = procmail -a &quot;$EXTENSION&quot;<br>
+mailbox</em>size<em>limit = 0<br>
+recipient</em>delimiter = +<br>
+inet<em>interfaces = all<br>
+home</em>mailbox = Maildir/</p>
+
+<p>Fique atento para a configuraçao &#39;home_mailbox&#39; que define o diretorio onde serao armazenadas as mensagens de cada usuario. Neste exemplo esse diretorio seria $HOME/Maildir/</p>
+
+<p>Instalando o Servidor POP3 e IMAP Courier</p>
+
+<p>As instalaçoes dos servidores POP3 e IMAP com suporte SSL Courier tambem podem ser feitas atraves do apt-get:</p>
+
+<h1>apt-get install courier-pop courier-pop-ssl courier-imap courier-imap-ssl</h1>
+
+<p>Durante a instalaçao tambem e mostrado um wizard que pergunta se deseja que sejam criados os diretorios para administraçao via web. Responda que nao. Logo em seguida serao gerados os certificados SSL, basta prosseguir com a instalaçao. É possivel personalizar as informaçoes dos certificados, mas nao sera necessario neste momento.</p>
+
+<p>Os arquivos de configuraçao do courier ficam armazenados no debian no diretorio /etc/courier. O arquivo de configuraçao do servidor POP3 e o /etc/courier/pop3d e o equivalente para o servidor IMAP e o /etc/courier/imapd.</p>
+
+<p>Fique atento para a configuraçao &#39;MAILDIRPATH&#39; destes dois arquivos de configuraçao que definem o diretorio onde serao armazenadas as mensagens de cada usuario. Este diretorio deve ser o mesmo que foi configurado na opçao &#39;home_mailbox&#39; do postfix.</p>
+
+<p>Apos este passo o servidor Courier esta instalado e funcionando para os casos mais basicos.</p>
+
+<p>Criando o diretorio Maildir</p>
+
+<p>O diretorio que armazena os emails Maildir e um diretorio como outro qualquer, mas necessita que existam outros 3 diretorios dentro dele, onde serao armazenados os emails. Para facilitar esta tarefa o courirer disponibiliza o utilitario &#39;maildirmake&#39; que cria esta estrutura de diretorios</p>
+
+<p>A utilizaçao e bastante simples, basta estar no diretorio Home do usuario logado e executar:</p>
+
+<h1>cd $HOME</h1>
+
+<h1>maildirmake Maildir</h1>
+
+<p>Deve-se tomar cuidado ao criar estes diretorios para que as permissoes fiquem corretas, para isto e necessario que o usuario dono e o grupo do diretorio Maildir sejam os mesmos do diretorio Home.</p>
+
+<p>Instalando o Webmail Squirrelmail</p>
+
+<p>A instalaçao do Squirrelmail tambem e feita atraves do apt-get:</p>
+
+<h1>apt-get install squirrelmail</h1>
+
+<p>O squirrelmail utiliza o apache como Servidor Web, de modo que o apache e instalado como dependencia caso ainda nao esteja instalado.</p>
+
+<p>Para configurar o squirrelmail no apache copie o arquivo de configuraçao que o proprio squrirrelmail disponibiliza para a o diretorio de configuraçao do apache:</p>
+
+<h1>cp /etc/squirrelmail/apache.conf /etc/apache2/conf.d/squirrelmail.conf</h1>
+
+<p>Apos e necessario reiniciar o apache:</p>
+
+<h1>/etc/init.d/apache2 restart</h1>
+
+<p>Acessando o Webmail e testando</p>
+
+<p>Apos estes passos esta tudo instalado e configurado</p>
+
+<p>Para acessar o webmail acesse o seguinte endereço no navegador (considerando que a instalaçao foi realizada em localhost):</p>
+
+<p><a href="http://192.168.0.100/squirrelmail/">http://localhost/squirrelmail/</a></p>
+
+<p>Para testar realize a autenticaçao com um usuario valido do sistema e envie um email para o seu email pessoal do yahoo, gmail ou hotmail por exemplo. Como o servidor nao possui um dominio valido, provavelmente a mensagem sera enviada para a pasta de SPAM ou lixo eletronico.</p>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Copiando arquivos via SSH</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Copiando arquivos via SSH</h2>
+<p class="meta">14 Nov 2010</p>
+
+<div class="post">
+<p>O serviço SSH alem de permitir a execuçao de comandos remotamente, possibilita tambem a copia de arquivos de forma bastante simples e poderosa.</p>
+
+<p>A sintaxe basica e a seguinte:</p>
+
+<h1>scp teste.txt login@servidor:/tmp</h1>
+
+<p>Este comando ira realizar a copia de um arquivo local &#39;teste.txt&#39; para o diretorio &#39;/tmp&#39; do servidor remoto.</p>
+
+<p>É possivel tambem o contrario, isto e, copiar arquivos do servidor remoto para o diretorio atual:</p>
+
+<h1>scp login@servidor:/tmp/teste2.txt $HOME</h1>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Configurando o arquivo /etc/hosts para facilitar a comunicação entre os servidores</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Configurando o arquivo /etc/hosts para facilitar a comunicação entre os servidores</h2>
+<p class="meta">18 Sep 2010</p>
+
+<div class="post">
+<p>O arquivo <code>/etc/hosts</code> faz o relacionamento entre um nome de computador e endereço IP local. Recomendado para IPs constantemente acessados e para colocaçao de endereços de virtual hosts (quando deseja referir pelo nome ao inves de IP). A inclusao de um computador neste arquivo dispensa a consulta de um servidor de nomes para obter um endereço IP, sendo muito util para maquinas que sao acessadas frequentemente. </p>
+
+<p>No caso de um ambiente de testes com maquinas virtuais pode ser configurado este arquivo para facilitar o acesso entre os servidores, nao necessitando digitar o endereço IP e sim o proprio nome do servidor.</p>
+
+<p>A configuraçao deste arquivo e bem simples, sendo que cada linha representa um mapeamento IP =&gt; nome, desta forma basta inserir os IPs de cada servidor e o seu nome correspondente separados por espaço, como no exemplo abaixo:</p>
+
+<hr>
+
+<p>127.0.0.1  localhost<br>
+192.168.0.101  ubuntu-server-vm1  </p>
+
+<h2>192.168.0.102  ubuntu-server-vm2  </h2>
+
+<p>A partir de agora voce pode acessar qualquer um destes servidores da seguinte forma:</p>
+
+<h1>ssh uservm1@ubuntu-server-vm1</h1>
+
+<p>em vez de:</p>
+
+<h1>ssh <a href="mailto:uservm1@192.168.0.101">uservm1@192.168.0.101</a></h1>
+
+<p>Referencia: <a href="http://focalinux.cipsga.org.br/guia/avancado/ch-rede.htm">http://focalinux.cipsga.org.br/guia/avancado/ch-rede.htm</a></p>
+
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>
