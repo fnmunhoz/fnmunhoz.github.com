@@ -11,7 +11,7 @@ tags:
 - book
 ---
 
-Hey guys its been a long time without posts! So I'm here to recommend a book, that my coworker and friend [Paulo Ragonha](http://paulo.ragonha.me) recently wrote.
+Hey guys it's been a long time without posts! So I'm here to recommend a book, that my co-worker and friend [Paulo Ragonha](http://paulo.ragonha.me) recently wrote.
 
 [Jasmine Javascript Testing](http://bit.ly/195WG9g) is a book about how to be a pro in javascript testing.
 
