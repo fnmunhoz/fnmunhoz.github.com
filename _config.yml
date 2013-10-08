@@ -2,3 +2,5 @@ name: Felipe Munhoz
 markdown: redcarpet
 pygments: true
 permalink: /:title
+description: Embrace changes
+url: http://blog.felipemunhoz.com
